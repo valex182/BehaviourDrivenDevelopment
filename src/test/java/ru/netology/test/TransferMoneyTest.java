@@ -62,4 +62,16 @@ public class TransferMoneyTest {
         assertEquals(expected1, dashboardPage.getBalanceCard2());
         assertEquals(expected2, dashboardPage.getBalanceCard1());
     }
+
+    @Test
+    void shouldTransferInvalidAmountFromCard2toCard1() {
+        DashboardPage dashboardPage = shouldEnterDashboardPage();
+        dashboardPage.dashboardPageVisible();
+        val moneyTransfer = dashboardPage.topUpCard1();
+        moneyTransfer.moneyTransferVisible();
+        moneyTransfer.setTransferAmmount(amountInvalid);
+        moneyTransfer.setNumberCardfrom(DataHelper.getCardNumber2());
+        moneyTransfer.doTransfer();
+        moneyTransfer.errorTransfer();
+    }
 }
