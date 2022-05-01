@@ -1,4 +1,4 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/ecdt012ule1mks2r?svg=true)](https://ci.appveyor.com/project/valex182/patterns2)
+[![Build status](https://ci.appveyor.com/api/projects/status/md5lrfu7obiiwaam?svg=true)](https://ci.appveyor.com/project/valex182/behaviourdrivendevelopment)
 
 # Домашнее задание к занятию "2.4. BDD"
 ## Задание 1. Page Object's
