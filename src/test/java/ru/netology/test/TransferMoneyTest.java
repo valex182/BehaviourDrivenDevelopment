@@ -24,16 +24,6 @@ public class TransferMoneyTest {
     }
 
     @Test
-    void shouldEnterValidLogin() {
-        open("http://localhost:9999");
-        val loginPage = new LoginPage();
-        val authInfo = DataHelper.getAuthInfo();
-        val verificationPage = loginPage.validLogin(authInfo);
-        val verificationCode = DataHelper.getVerificationCodeFor(authInfo);
-        verificationPage.validVerify(verificationCode);
-    }
-
-    @Test
     void shouldTransferMoneyFromCard2toCard1() {
         DashboardPage dashboardPage = shouldEnterDashboardPage();
         dashboardPage.dashboardPageVisible();
